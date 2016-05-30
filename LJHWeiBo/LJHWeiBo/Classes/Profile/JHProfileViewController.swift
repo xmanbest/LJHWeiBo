@@ -8,6 +8,6 @@
 
 import UIKit
 
-class JHProfileViewController: UIViewController {
+class JHProfileViewController: UITableViewController {
 
 }

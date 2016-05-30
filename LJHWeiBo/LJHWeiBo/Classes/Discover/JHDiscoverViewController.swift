@@ -8,6 +8,6 @@
 
 import UIKit
 
-class JHDiscoverViewController: UIViewController {
+class JHDiscoverViewController: UITableViewController {
 
 }

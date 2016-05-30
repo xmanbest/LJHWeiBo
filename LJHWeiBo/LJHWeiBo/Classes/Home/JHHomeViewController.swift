@@ -8,6 +8,6 @@
 
 import UIKit
 
-class JHHomeViewController: UIViewController {
+class JHHomeViewController: UITableViewController {
 
 }

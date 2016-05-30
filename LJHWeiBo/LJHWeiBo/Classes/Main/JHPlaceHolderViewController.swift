@@ -1,5 +1,5 @@
 //
-//  JHCommonViewController.swift
+//  JHPlaceHolderViewController.swift
 //  LJHWeiBo
 //
 //  Created by 李建華 on 16/5/30.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class JHCommonViewController: UIViewController {
+class JHPlaceHolderViewController: UIViewController {
 
 }
