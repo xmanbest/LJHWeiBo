@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		5184BC5C1CFB131300D91C0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BC5B1CFB131300D91C0A /* AppDelegate.swift */; };
 		5184BC5E1CFB131300D91C0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BC5D1CFB131300D91C0A /* ViewController.swift */; };
-		5184BC611CFB131300D91C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5184BC5F1CFB131300D91C0A /* Main.storyboard */; };
 		5184BC631CFB131300D91C0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5184BC621CFB131300D91C0A /* Assets.xcassets */; };
-		5184BC661CFB131300D91C0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5184BC641CFB131300D91C0A /* LaunchScreen.storyboard */; };
 		5184BC711CFB131300D91C0A /* LJHWeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BC701CFB131300D91C0A /* LJHWeiBoTests.swift */; };
 		5184BC7C1CFB131300D91C0A /* LJHWeiBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BC7B1CFB131300D91C0A /* LJHWeiBoUITests.swift */; };
+		5184BC941CFBD5FB00D91C0A /* JHMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BC931CFBD5FB00D91C0A /* JHMainTabBarController.swift */; };
+		5184BC961CFBD74700D91C0A /* JHCommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BC951CFBD74700D91C0A /* JHCommonViewController.swift */; };
+		5184BC981CFBD76100D91C0A /* JHDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BC971CFBD76100D91C0A /* JHDiscoverViewController.swift */; };
+		5184BC9A1CFBD77800D91C0A /* JHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BC991CFBD77800D91C0A /* JHHomeViewController.swift */; };
+		5184BC9C1CFBD79B00D91C0A /* JHMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BC9B1CFBD79B00D91C0A /* JHMessageViewController.swift */; };
+		5184BC9E1CFBD7B600D91C0A /* JHProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BC9D1CFBD7B600D91C0A /* JHProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +41,7 @@
 		5184BC581CFB131300D91C0A /* LJHWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJHWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5184BC5B1CFB131300D91C0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5184BC5D1CFB131300D91C0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5184BC601CFB131300D91C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5184BC621CFB131300D91C0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5184BC651CFB131300D91C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5184BC671CFB131300D91C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5184BC6C1CFB131300D91C0A /* LJHWeiBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJHWeiBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5184BC701CFB131300D91C0A /* LJHWeiBoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJHWeiBoTests.swift; sourceTree = "<group>"; };
@@ -47,6 +49,12 @@
 		5184BC771CFB131300D91C0A /* LJHWeiBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJHWeiBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5184BC7B1CFB131300D91C0A /* LJHWeiBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJHWeiBoUITests.swift; sourceTree = "<group>"; };
 		5184BC7D1CFB131300D91C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5184BC931CFBD5FB00D91C0A /* JHMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHMainTabBarController.swift; sourceTree = "<group>"; };
+		5184BC951CFBD74700D91C0A /* JHCommonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHCommonViewController.swift; sourceTree = "<group>"; };
+		5184BC971CFBD76100D91C0A /* JHDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHDiscoverViewController.swift; sourceTree = "<group>"; };
+		5184BC991CFBD77800D91C0A /* JHHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHHomeViewController.swift; sourceTree = "<group>"; };
+		5184BC9B1CFBD79B00D91C0A /* JHMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHMessageViewController.swift; sourceTree = "<group>"; };
+		5184BC9D1CFBD7B600D91C0A /* JHProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,8 @@
 			children = (
 				5184BC5B1CFB131300D91C0A /* AppDelegate.swift */,
 				5184BC5D1CFB131300D91C0A /* ViewController.swift */,
-				5184BC5F1CFB131300D91C0A /* Main.storyboard */,
+				5184BC891CFBD59E00D91C0A /* Classes */,
 				5184BC621CFB131300D91C0A /* Assets.xcassets */,
-				5184BC641CFB131300D91C0A /* LaunchScreen.storyboard */,
 				5184BC671CFB131300D91C0A /* Info.plist */,
 			);
 			path = LJHWeiBo;
@@ -123,6 +130,75 @@
 				5184BC7D1CFB131300D91C0A /* Info.plist */,
 			);
 			path = LJHWeiBoUITests;
+			sourceTree = "<group>";
+		};
+		5184BC891CFBD59E00D91C0A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5184BC8A1CFBD59E00D91C0A /* Common */,
+				5184BC8B1CFBD59E00D91C0A /* Discover */,
+				5184BC8C1CFBD59E00D91C0A /* Home */,
+				5184BC8D1CFBD59E00D91C0A /* Main */,
+				5184BC8E1CFBD59E00D91C0A /* Message */,
+				5184BC8F1CFBD59E00D91C0A /* Profile */,
+				5184BC901CFBD59E00D91C0A /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5184BC8A1CFBD59E00D91C0A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5184BC951CFBD74700D91C0A /* JHCommonViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5184BC8B1CFBD59E00D91C0A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				5184BC971CFBD76100D91C0A /* JHDiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		5184BC8C1CFBD59E00D91C0A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5184BC991CFBD77800D91C0A /* JHHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5184BC8D1CFBD59E00D91C0A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5184BC931CFBD5FB00D91C0A /* JHMainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5184BC8E1CFBD59E00D91C0A /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				5184BC9B1CFBD79B00D91C0A /* JHMessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		5184BC8F1CFBD59E00D91C0A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5184BC9D1CFBD7B600D91C0A /* JHProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5184BC901CFBD59E00D91C0A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +263,7 @@
 		5184BC501CFB131300D91C0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JH;
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = lijianhua;
@@ -232,9 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5184BC661CFB131300D91C0A /* LaunchScreen.storyboard in Resources */,
 				5184BC631CFB131300D91C0A /* Assets.xcassets in Resources */,
-				5184BC611CFB131300D91C0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5184BC5E1CFB131300D91C0A /* ViewController.swift in Sources */,
+				5184BC981CFBD76100D91C0A /* JHDiscoverViewController.swift in Sources */,
+				5184BC9E1CFBD7B600D91C0A /* JHProfileViewController.swift in Sources */,
+				5184BC961CFBD74700D91C0A /* JHCommonViewController.swift in Sources */,
+				5184BC9A1CFBD77800D91C0A /* JHHomeViewController.swift in Sources */,
 				5184BC5C1CFB131300D91C0A /* AppDelegate.swift in Sources */,
+				5184BC941CFBD5FB00D91C0A /* JHMainTabBarController.swift in Sources */,
+				5184BC9C1CFBD79B00D91C0A /* JHMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,25 +375,6 @@
 			targetProxy = 5184BC781CFB131300D91C0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5184BC5F1CFB131300D91C0A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5184BC601CFB131300D91C0A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5184BC641CFB131300D91C0A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5184BC651CFB131300D91C0A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5184BC7E1CFB131300D91C0A /* Debug */ = {
