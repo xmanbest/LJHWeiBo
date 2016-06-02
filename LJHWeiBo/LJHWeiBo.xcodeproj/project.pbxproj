@@ -22,6 +22,9 @@
 		5184BCA61CFEB09600D91C0A /* JHLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BCA51CFEB09600D91C0A /* JHLoginView.swift */; };
 		5184BCAA1CFFDA6400D91C0A /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BCA91CFFDA6400D91C0A /* UIBarButtonItem+Category.swift */; };
 		5184BCAC1CFFF37600D91C0A /* JHTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BCAB1CFFF37600D91C0A /* JHTitleButton.swift */; };
+		5184BCAF1D000C7900D91C0A /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5184BCAE1D000C7900D91C0A /* Popup.storyboard */; };
+		5184BCB11D00120A00D91C0A /* JHPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BCB01D00120A00D91C0A /* JHPopupViewController.swift */; };
+		5184BCB31D00189400D91C0A /* JHPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184BCB21D00189400D91C0A /* JHPopupPresentationController.swift */; };
 		EF8F8A92640CB43B02F0508A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400BB94516451CFAA28951CE /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +68,9 @@
 		5184BCA51CFEB09600D91C0A /* JHLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHLoginView.swift; sourceTree = "<group>"; };
 		5184BCA91CFFDA6400D91C0A /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
 		5184BCAB1CFFF37600D91C0A /* JHTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHTitleButton.swift; sourceTree = "<group>"; };
+		5184BCAE1D000C7900D91C0A /* Popup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		5184BCB01D00120A00D91C0A /* JHPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHPopupViewController.swift; sourceTree = "<group>"; };
+		5184BCB21D00189400D91C0A /* JHPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHPopupPresentationController.swift; sourceTree = "<group>"; };
 		92042B6CE7D104E4D5999904 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F7B200FD6729162DA7BADD91 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +186,7 @@
 		5184BC8C1CFBD59E00D91C0A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5184BCAD1D000C3800D91C0A /* Popup */,
 				5184BC991CFBD77800D91C0A /* JHHomeViewController.swift */,
 			);
 			path = Home;
@@ -218,6 +225,16 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		5184BCAD1D000C3800D91C0A /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				5184BCAE1D000C7900D91C0A /* Popup.storyboard */,
+				5184BCB01D00120A00D91C0A /* JHPopupViewController.swift */,
+				5184BCB21D00189400D91C0A /* JHPopupPresentationController.swift */,
+			);
+			name = Popup;
 			sourceTree = "<group>";
 		};
 		960D008FA535DBA2457F0A52 /* Frameworks */ = {
@@ -348,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5184BCAF1D000C7900D91C0A /* Popup.storyboard in Resources */,
 				5184BCA01CFC014100D91C0A /* MainVCSettings.json in Resources */,
 				5184BC631CFB131300D91C0A /* Assets.xcassets in Resources */,
 			);
@@ -429,6 +447,8 @@
 				5184BC9E1CFBD7B600D91C0A /* JHProfileViewController.swift in Sources */,
 				5184BC9A1CFBD77800D91C0A /* JHHomeViewController.swift in Sources */,
 				5184BC5C1CFB131300D91C0A /* AppDelegate.swift in Sources */,
+				5184BCB31D00189400D91C0A /* JHPopupPresentationController.swift in Sources */,
+				5184BCB11D00120A00D91C0A /* JHPopupViewController.swift in Sources */,
 				5184BC941CFBD5FB00D91C0A /* JHMainTabBarController.swift in Sources */,
 				5184BC9C1CFBD79B00D91C0A /* JHMessageViewController.swift in Sources */,
 				5184BCAA1CFFDA6400D91C0A /* UIBarButtonItem+Category.swift in Sources */,

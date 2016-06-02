@@ -30,8 +30,24 @@ class JHHomeViewController: JHBasicTableViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem.createButtonItem("navigationbar_friendattention", target: self, action: #selector(JHHomeViewController.leftNaviItemClick))
         navigationItem.rightBarButtonItem = UIBarButtonItem.createButtonItem("navigationbar_pop", target: self, action: #selector(JHHomeViewController.rightNaviItemClick))
         
-        let titleBtn = JHTitleButton(type: UIButtonType.Custom)
+        titleBtn.addTarget(self, action: #selector(JHHomeViewController.titleBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         navigationItem.titleView = titleBtn
+    }
+    
+    func titleBtnClick() {
+        titleBtn.selected = !titleBtn.selected
+        
+        // popup view
+        popupView()
+        
+    }
+    
+    private func popupView() {
+        let popupVc = UIStoryboard(name: "Popup", bundle: nil).instantiateInitialViewController()
+        popupVc?.modalPresentationStyle = UIModalPresentationStyle.Custom
+        popupVc?.transitioningDelegate = self;
+//        popupVc?.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        presentViewController(popupVc!, animated: true, completion: nil)
     }
     
     func leftNaviItemClick() {
@@ -40,5 +56,18 @@ class JHHomeViewController: JHBasicTableViewController {
     
     func rightNaviItemClick() {
         print(#function)
+    }
+    
+    // MARK: - Lazy
+    
+    private lazy var titleBtn: JHTitleButton = {
+        return JHTitleButton(type: UIButtonType.Custom)
+    }()
+}
+
+// MARK: - UIViewControllerTransitioningDelegate
+extension JHHomeViewController: UIViewControllerTransitioningDelegate {
+    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
+        return JHPopupPresentationController(presentedViewController: presented, presentingViewController: presenting)
     }
 }
