@@ -6,8 +6,20 @@
 //  Copyright © 2016年 lijianhua. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class JHTitleButton: UIButton {
-
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setTitle("长相搞笑", forState: UIControlState.Normal)
+        setTitleColor(UIColor.darkGrayColor(), forState: UIControlState.Normal)
+        setImage(UIImage(named: "navigationbar_arrow_down"), forState: UIControlState.Normal)
+        setImage(UIImage(named: "navigationbar_arrow_up"), forState: UIControlState.Selected)
+        sizeToFit()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

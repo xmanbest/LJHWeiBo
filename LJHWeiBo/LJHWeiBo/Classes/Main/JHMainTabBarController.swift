@@ -12,11 +12,7 @@ class JHMainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // setup tabbar item selected color
-        tabBar.tintColor = UIColor.orangeColor()
-        
         setupChildController()
-        
         
     }
     
@@ -24,15 +20,14 @@ class JHMainTabBarController: UITabBarController {
         super.viewWillAppear(animated)
         
         // add plus button to tabbar
-        setupPlusBtn()
+        tabBar.addSubview(plusButton)
     }
     
-    /**
-     add plus button to tabbar
-     */
-    private func setupPlusBtn() {
+    // MARK: - Lazy
+    
+    private lazy var plusButton: UIButton = {
         // get button info
-        let tabbarItemCount = childViewControllers.count
+        let tabbarItemCount = self.childViewControllers.count
         let tabbarItemWidth = UIScreen.mainScreen().bounds.size.width / CGFloat(tabbarItemCount)
         
         // setup button
@@ -42,8 +37,12 @@ class JHMainTabBarController: UITabBarController {
         plusBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: UIControlState.Normal)
         plusBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
         plusBtn.addTarget(self, action: #selector(JHMainTabBarController.plusBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
-        tabBar .addSubview(plusBtn)
-    }
+        
+        return plusBtn
+    }()
+    
+    
+    // MARK: - Setup
     
     /**
      plus button click handler
